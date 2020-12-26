@@ -1,0 +1,20 @@
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #fff;
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #CCC;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #2981df;
+}
+
+/*Estilos estándar experimentales (Principalmente Firefox)*/
+body{
+    scrollbar-color: #2981df #CCC;
+    scrollbar-width: 10px;
+    border-radius: 10px;
+}

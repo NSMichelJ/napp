@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteApp</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="scroll.css">
+</head>
+<body>
+
+     <!--NAVEGACION-->
+     <nav class="navbar navbar-light bg-light">
+        <a href="#" class="navbar-brand">NoteApp V0.1</a>
+    </nav>
+
+
+    <!--CONTENIDO PRINCIPAL DE LA APLICACION-->
+    <div class="container">
+
+        
+        <div id="App" class="row pt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Agrega una nota</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="formulario">
+                            <div class="form-group">
+                                <input type="text" id="titulo" placeholder="Agrega el titulo tu nota" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="descripcion" cols="80" rows="8" class="form-control" placeholder="Agrega la descripcion de tu nota"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Guardar nota</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="notas" class="col-md-8">
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
