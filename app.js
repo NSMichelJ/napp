@@ -41,21 +41,12 @@ class Interfaz{
         }
         localStorage.setItem('notas', JSON.stringify(notas));
         this.agregarNota();
-        this.mostrarMesaje('Nota eliminada satisfactoriamente', 'info');
+        this.mostrarMesaje('Nota eliminada satisfactoriamente',);
     }
 
     mostrarMesaje(mensaje, claseCss){
-        const div = document.createElement('div');
-        div.className =`alert mt-2 alert-${claseCss}`;
-        div.appendChild(document.createTextNode(mensaje));
-
-        const container = document.querySelector('.container');
-        const app = document.querySelector('#App');
-        container.insertBefore(div, app);
-
-        setTimeout(() => {
-            document.querySelector('.alert').remove();
-        }, 3000);
+        alertify.set('notifier','position', 'bottom-left');
+        alertify.notify(mensaje, claseCss, 3, null);
     } 
 }
 
@@ -65,7 +56,7 @@ document.getElementById('formulario').addEventListener('submit', function(e) {
 
     const interfaz = new Interfaz();
     if (titulo === "" || descripcion === "") {
-        interfaz.mostrarMesaje('No se pudo crear la nota, por favor, llene los campos', 'danger');
+        interfaz.mostrarMesaje('No se pudo crear la nota, por favor, llene los campos', 'error');
     } else {
         let notas = JSON.parse(localStorage.getItem('notas'));
 
