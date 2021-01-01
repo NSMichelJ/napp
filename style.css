@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fefefe;
+}
+
+
+
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: crimson;
+    padding: 10px;
+    /* background-color: crimson; */ 
+}
+
+.navigation p{
+    margin: 0 10px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0px 2px 10px #000;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+.content{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-md-4{
+    width: 30%;
+}
+
+.col-md-6{
+    width: 70%;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    border: 0;
+    background-color: rgba(220, 20, 60, 0.1);
+    border-radius: 5px;
+    outline: none;
+    padding: 12px 6px;
+    font-size: 15px;
+    background-clip: padding-box;
+    color: rgb(105, 100, 100);
+}
+
+.form-group{
+    margin: 10px;
+}
+
+.card{
+    border: rgba(220, 20, 60, 0.5) solid 2px;
+    border-radius: 5px; 
+    margin: 10px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+}
+
+
+.card-header{
+    font-size: 25px;
+    text-align: center;
+    background-color: rgba(220, 20, 60, 0.2);  
+    padding: 20px 10px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.card-body{
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.btn{
+    
+    background-color: #fefefe;
+    color: black;
+    outline: 0;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-block{
+    display: block;
+    width: 100%;
+}
+
+.btn-blue:focus{
+    box-shadow: 0px 0px 5px #036ad8;
+    border: 1px solid #0366cf;
+}
+
+.btn-blue{
+    background-color: #007AFF;
+    color: #fff;
+    transition: all 500ms ease;
+}
+
+.btn-blue:hover{
+    background: #036ad8;
+}
+
+.btn-danger{
+    background: #E92325;
+    color: #fff;
+    transition: all 500ms ease;
+}
+
+.btn-danger:focus{
+    box-shadow: 0px 0px 5px #d80303;
+    border: 1px solid #cf0303;
+}
+
+.btn-danger:hover{
+    background-color: #e20000;
+}
+
+
+@media(max-width: 800px){
+    .content{
+        display: block;
+        
+    }
+
+    .col-md-4{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .col-md-6{
+        width: 100%
+    }
+}
+
+
+
+  
