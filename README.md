@@ -1,1 +1,1 @@
-# napp
+# aplicación de práctica con Javascript
